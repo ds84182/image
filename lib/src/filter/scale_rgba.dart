@@ -1,4 +1,4 @@
-part of image;
+part of image.filter;
 
 Image scaleRGBA(Image src, int r, int g, int b, int a) {
   double dr = r / 255.0;

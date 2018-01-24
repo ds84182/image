@@ -1,4 +1,4 @@
-part of image;
+part of image.filter;
 
 /// Use the top-left pixel of a block for the block color, used by [pixelate].
 const int PIXELATE_UPPERLEFT = 0;

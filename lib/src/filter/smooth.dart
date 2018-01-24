@@ -1,4 +1,4 @@
-part of image;
+part of image.filter;
 
 /**
  * Apply a smoothing convolution filter to the [src] image.

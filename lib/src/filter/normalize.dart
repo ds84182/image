@@ -1,4 +1,4 @@
-part of image;
+part of image.filter;
 
 /**
  * Linearly normalize the colors of the image.  All color values will be mapped

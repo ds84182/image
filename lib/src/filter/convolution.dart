@@ -1,4 +1,4 @@
-part of image;
+part of image.filter;
 
 /**
  * Apply a 3x3 convolution filter to the [src] image.  [filter] should be a

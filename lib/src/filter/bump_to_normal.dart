@@ -1,4 +1,4 @@
-part of image;
+part of image.filter;
 
 /**
  * Generate a normal map from a heightfield bump image.

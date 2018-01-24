@@ -1,4 +1,4 @@
-part of image;
+part of image.filter;
 
 /// Gaussian noise type used by [noise].
 const int NOISE_GAUSSIAN = 0;

@@ -12,33 +12,11 @@ import 'package:archive/archive.dart';
 import 'package:xml/xml.dart' as XML;
 
 import 'src/draw.dart'
-    show fill, fillRect, drawPixel, drawString;
+    show drawPixel, drawString;
 
 export 'src/draw.dart';
 export 'src/effects.dart';
-
-part 'src/filter/adjust_color.dart';
-part 'src/filter/brightness.dart';
-part 'src/filter/bump_to_normal.dart';
-part 'src/filter/color_offset.dart';
-part 'src/filter/contrast.dart';
-part 'src/filter/convolution.dart';
-part 'src/filter/emboss.dart';
-part 'src/filter/gaussian_blur.dart';
-part 'src/filter/grayscale.dart';
-part 'src/filter/invert.dart';
-part 'src/filter/noise.dart';
-part 'src/filter/normalize.dart';
-part 'src/filter/pixelate.dart';
-part 'src/filter/quantize.dart';
-part 'src/filter/remap_colors.dart';
-part 'src/filter/scale_rgba.dart';
-part 'src/filter/seperable_convolution.dart';
-part 'src/filter/seperable_kernel.dart';
-part 'src/filter/sepia.dart';
-part 'src/filter/smooth.dart';
-part 'src/filter/sobel.dart';
-part 'src/filter/vignette.dart';
+export 'src/filter.dart';
 
 part 'src/fonts/arial_14.dart';
 part 'src/fonts/arial_24.dart';

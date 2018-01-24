@@ -1,4 +1,4 @@
-part of image;
+part of image.filter;
 
 Map<int, SeperableKernel> _gaussianKernelCache = {};
 

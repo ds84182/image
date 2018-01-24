@@ -1,4 +1,4 @@
-part of image;
+part of image.filter;
 
 /**
  * Quantize the number of colors in image to 256.

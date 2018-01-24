@@ -1,4 +1,4 @@
-part of image;
+part of image.filter;
 
 /**
  * Invert the colors of the [src] image.

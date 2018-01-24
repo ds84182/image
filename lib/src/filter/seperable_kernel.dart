@@ -1,4 +1,4 @@
-part of image;
+part of image.filter;
 
 /**
  * A kernel object to use with [seperableConvolution] filtering.

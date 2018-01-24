@@ -1,4 +1,4 @@
-part of image;
+part of image.filter;
 
 /**
  * Apply a generic seperable convolution filter the [src] image, using the

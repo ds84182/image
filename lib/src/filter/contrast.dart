@@ -1,4 +1,4 @@
-part of image;
+part of image.filter;
 
 num _lastContrast;
 Uint8List _contrast;
@@ -23,7 +23,7 @@ Image contrast(Image src, num contrast) {
     _contrast = new Uint8List(256);
     for (int i = 0; i < 256; ++i) {
       _contrast[i] =
-          _clamp255((((((i / 255.0) - 0.5) * contrast) + 0.5) * 255.0).toInt());
+          clamp255((((((i / 255.0) - 0.5) * contrast) + 0.5) * 255.0).toInt());
     }
   }
 

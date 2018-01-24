@@ -1,4 +1,4 @@
-part of image;
+part of image.filter;
 
 /**
  * Apply an emboss convolution filter.

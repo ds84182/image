@@ -1,4 +1,4 @@
-part of image;
+part of image.filter;
 
 /**
  * Adjust the color of the [src] image using varous color transformations.
@@ -159,9 +159,9 @@ Image adjustColor(Image src, {int blacks, int whites, int mids,
       b = b * amount + ob * invAmount;
     }
 
-    pixels[i] = _clamp255((r * 255.0).toInt());
-    pixels[i + 1] = _clamp255((g * 255.0).toInt());
-    pixels[i + 2] = _clamp255((b * 255.0).toInt());
+    pixels[i] = clamp255((r * 255.0).toInt());
+    pixels[i + 1] = clamp255((g * 255.0).toInt());
+    pixels[i + 2] = clamp255((b * 255.0).toInt());
   }
 
   return src;

@@ -1,4 +1,4 @@
-part of image;
+part of image.filter;
 
 /**
  * Convert the image to grayscale.
