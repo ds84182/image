@@ -1,4 +1,4 @@
-part of image;
+part of image.effects;
 
 /**
  * Create a drop-shadow effect for the image.

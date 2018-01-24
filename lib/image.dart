@@ -15,8 +15,7 @@ import 'src/draw.dart'
     show fill, fillRect, drawPixel, drawString;
 
 export 'src/draw.dart';
-
-part 'src/effects/drop_shadow.dart';
+export 'src/effects.dart';
 
 part 'src/filter/adjust_color.dart';
 part 'src/filter/brightness.dart';
