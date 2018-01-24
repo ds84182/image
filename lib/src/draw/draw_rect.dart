@@ -1,4 +1,4 @@
-part of image;
+part of image.draw;
 
 /**
  * Draw a rectangle in the image [dst] with the [color].

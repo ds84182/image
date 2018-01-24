@@ -1,4 +1,4 @@
-part of image;
+part of image.draw;
 
 /**
  * Draw a circle into the [image] with a center of [x0],[y0] and

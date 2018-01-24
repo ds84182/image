@@ -1,4 +1,4 @@
-part of image;
+part of image.draw;
 
 /**
  * Draw a single pixel into the image, applying alpha and opacity blending.

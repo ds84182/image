@@ -11,15 +11,10 @@ import 'dart:typed_data';
 import 'package:archive/archive.dart';
 import 'package:xml/xml.dart' as XML;
 
-part 'src/draw/draw_char.dart';
-part 'src/draw/draw_circle.dart';
-part 'src/draw/draw_image.dart';
-part 'src/draw/draw_line.dart';
-part 'src/draw/draw_pixel.dart';
-part 'src/draw/draw_rect.dart';
-part 'src/draw/draw_string.dart';
-part 'src/draw/fill.dart';
-part 'src/draw/fill_rect.dart';
+import 'src/draw.dart'
+    show fill, fillRect, drawPixel, drawString;
+
+export 'src/draw.dart';
 
 part 'src/effects/drop_shadow.dart';
 

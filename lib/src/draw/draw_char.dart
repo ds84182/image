@@ -1,4 +1,4 @@
-part of image;
+part of image.draw;
 
 /**
  * Draw a single character from [char] horizontally into [image] at position

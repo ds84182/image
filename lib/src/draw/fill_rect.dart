@@ -1,4 +1,4 @@
-part of image;
+part of image.draw;
 
 /**
  * Fill a rectangle in the image [src] with the given [color] with the corners

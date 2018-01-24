@@ -1,4 +1,4 @@
-part of image;
+part of image.draw;
 
 /**
  * Draw a string horizontally into [image] horizontally into [image] at position

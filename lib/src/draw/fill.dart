@@ -1,4 +1,4 @@
-part of image;
+part of image.draw;
 
 /**
  * Set all of the pixels of an [image] to the given [color].

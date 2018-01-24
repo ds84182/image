@@ -1,4 +1,4 @@
-part of image;
+part of image.draw;
 
 /**
  * Draw the image [src] onto the image [dst].
