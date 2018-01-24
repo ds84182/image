@@ -17,10 +17,7 @@ import 'src/draw.dart'
 export 'src/draw.dart';
 export 'src/effects.dart';
 export 'src/filter.dart';
-
-part 'src/fonts/arial_14.dart';
-part 'src/fonts/arial_24.dart';
-part 'src/fonts/arial_48.dart';
+export 'src/fonts.dart';
 
 part 'src/formats/exr/exr_attribute.dart';
 part 'src/formats/exr/exr_b44_compressor.dart';

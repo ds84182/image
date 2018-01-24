@@ -1,4 +1,4 @@
-part of image;
+part of image.fonts;
 
 /**
  * 14px Arial font for use with [drawString] and [drawChar].
