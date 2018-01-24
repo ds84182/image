@@ -23,7 +23,7 @@ void onFileChanged(Html.Event event) {
   var file = files.item(0);
 
   Html.FileReader reader = new Html.FileReader();
-  reader.addEventListener("load", onFileLoaded);
+  reader.onLoad.listen(onFileLoaded);
   reader.readAsArrayBuffer(file);
 }
 
