@@ -1,4 +1,4 @@
-part of image;
+part of image.formats.webp;
 
 class VP8LTransform {
   // enum VP8LImageTransformType
@@ -459,10 +459,9 @@ class _VP8LMultipliers {
   int colorTransformDelta(int colorPred, int color) {
     // There's a bug in dart2js (issue 16497) that requires I do this a bit
     // convoluted to avoid having the optimizer butcher the code.
-    int a = _uint8ToInt8(colorPred);
-    int b = _uint8ToInt8(color);
-    int d = _int32ToUint32(a * b);
+    int a = colorPred.toSigned(8);
+    int b = color.toSigned(8);
+    int d = (a * b).toUnsigned(32);
     return d >> 5;
   }
 }
-

@@ -1,4 +1,4 @@
-part of image;
+part of image.formats.webp;
 
 /**
  * Encode an image to the PNG format.

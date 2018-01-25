@@ -8,3 +8,4 @@ export 'formats/psd.dart';
 export 'formats/pvrtc.dart';
 export 'formats/tga.dart';
 export 'formats/tiff.dart';
+export 'formats/webp.dart';

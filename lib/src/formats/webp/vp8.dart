@@ -1,4 +1,4 @@
-part of image;
+part of image.formats.webp;
 
 /**
  * WebP lossy format.

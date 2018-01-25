@@ -1,4 +1,4 @@
-part of image;
+part of image.formats.webp;
 
 class VP8Filter {
   VP8Filter() {
@@ -709,6 +709,9 @@ class VP8Filter {
   static int _clip8b(int v) {
     return ((v & -256) == 0) ? v : (v < 0) ? 0 : 255;
   }
+
+  static int _shiftR(int v, int a) => (v >> a).toSigned(32);
+  static int _shiftL(int v, int a) => (v << a).toSigned(32);
 
   static int __maxN = 0;
 

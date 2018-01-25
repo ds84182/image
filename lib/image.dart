@@ -24,7 +24,8 @@ import 'src/formats.dart'
         PsdDecoder,
         TgaEncoder,
         TgaDecoder,
-        TiffDecoder;
+        TiffDecoder,
+        WebPDecoder;
 
 export 'src/draw.dart';
 export 'src/effects.dart';
@@ -33,25 +34,10 @@ export 'src/fonts.dart';
 
 export 'src/formats.dart';
 
-part 'src/formats/webp/vp8.dart';
-part 'src/formats/webp/vp8_bit_reader.dart';
-part 'src/formats/webp/vp8_filter.dart';
-part 'src/formats/webp/vp8_types.dart';
-part 'src/formats/webp/vp8l.dart';
-part 'src/formats/webp/vp8l_bit_reader.dart';
-part 'src/formats/webp/vp8l_color_cache.dart';
-part 'src/formats/webp/vp8l_transform.dart';
-part 'src/formats/webp/webp_alpha.dart';
-part 'src/formats/webp/webp_filters.dart';
-part 'src/formats/webp/webp_frame.dart';
-part 'src/formats/webp/webp_huffman.dart';
-part 'src/formats/webp/webp_info.dart';
 part 'src/formats/decoder.dart';
 part 'src/formats/decode_info.dart';
 part 'src/formats/encoder.dart';
 part 'src/formats/formats.dart';
-part 'src/formats/webp_decoder.dart';
-part 'src/formats/webp_encoder.dart';
 
 part 'src/hdr/half.dart';
 part 'src/hdr/hdr_bloom.dart';

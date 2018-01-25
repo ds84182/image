@@ -1,4 +1,4 @@
-part of image;
+part of image.formats.webp;
 
 /**
  * Decode a WebP formatted image. This supports lossless (vp8l), lossy (vp8),
