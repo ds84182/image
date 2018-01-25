@@ -1,4 +1,4 @@
-part of image;
+part of image.hdr;
 
 /**
  * A slice is the data for an image framebuffer for a single channel.

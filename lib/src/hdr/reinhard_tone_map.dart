@@ -1,4 +1,4 @@
-part of image;
+part of image.hdr;
 
 /**
  * Applies Reinhard tone mapping to the hdr image, in-place.

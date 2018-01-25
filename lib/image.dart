@@ -12,20 +12,7 @@ import 'package:archive/archive.dart';
 import 'package:xml/xml.dart' as XML;
 
 import 'src/draw.dart' show drawPixel, drawString;
-import 'src/formats.dart'
-    show
-        ExrDecoder,
-        GifDecoder,
-        GifEncoder,
-        JpegDecoder,
-        JpegEncoder,
-        PngDecoder,
-        PngEncoder,
-        PsdDecoder,
-        TgaEncoder,
-        TgaDecoder,
-        TiffDecoder,
-        WebPDecoder;
+import 'src/formats.dart' show PngDecoder, TiffDecoder;
 
 export 'src/draw.dart';
 export 'src/effects.dart';
@@ -38,13 +25,7 @@ export 'src/formats/decode_info.dart';
 export 'src/formats/encoder.dart';
 export 'src/formats/format_utils.dart';
 
-part 'src/hdr/half.dart';
-part 'src/hdr/hdr_bloom.dart';
-part 'src/hdr/hdr_gamma.dart';
-part 'src/hdr/hdr_image.dart';
-part 'src/hdr/hdr_slice.dart';
-part 'src/hdr/hdr_to_image.dart';
-part 'src/hdr/reinhard_tone_map.dart';
+export 'src/hdr.dart';
 
 part 'src/transform/copy_into.dart';
 part 'src/transform/copy_crop.dart';

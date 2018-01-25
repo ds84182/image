@@ -63,7 +63,7 @@ int _int32ToUint32(int d) {
  * Binary conversion of a float32 to an uint32.  This is equivalent in C to
  * typecasting a float to unsigned int.
  */
-int _float32ToUint32(double d) {
+int float32ToUint32(double d) {
   __float32[0] = d;
   return __float32ToUint32[0];
 }

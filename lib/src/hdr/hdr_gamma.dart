@@ -1,4 +1,4 @@
-part of image;
+part of image.hdr;
 
 /**
  * Apply gamma scaling to the HDR image, in-place.

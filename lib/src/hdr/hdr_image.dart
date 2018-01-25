@@ -1,4 +1,4 @@
-part of image;
+part of image.hdr;
 
 /**
  * A high dynamic range RGBA image stored in 16-bit or 32-bit floating-point

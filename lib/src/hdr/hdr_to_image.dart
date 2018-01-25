@@ -1,4 +1,4 @@
-part of image;
+part of image.hdr;
 
 /**
  * Convert a high dynamic range image to a low dynamic range image,

@@ -1,4 +1,4 @@
-part of image;
+part of image.hdr;
 
 /**
  * Applies an HDR bloom filter to the image, in-place.
