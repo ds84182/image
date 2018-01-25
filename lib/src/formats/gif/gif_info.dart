@@ -1,4 +1,4 @@
-part of image;
+part of image.formats.gif;
 
 class GifInfo extends DecodeInfo {
   int colorResolution = 0;

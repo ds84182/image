@@ -13,7 +13,7 @@ import 'package:xml/xml.dart' as XML;
 
 import 'src/draw.dart'
     show drawPixel, drawString;
-import 'src/formats.dart' show ExrDecoder;
+import 'src/formats.dart' show ExrDecoder, GifDecoder, GifEncoder;
 
 export 'src/draw.dart';
 export 'src/effects.dart';
@@ -22,9 +22,6 @@ export 'src/fonts.dart';
 
 export 'src/formats.dart';
 
-part 'src/formats/gif/gif_color_map.dart';
-part 'src/formats/gif/gif_image_desc.dart';
-part 'src/formats/gif/gif_info.dart';
 part 'src/formats/jpeg/jpeg.dart';
 part 'src/formats/jpeg/jpeg_adobe.dart';
 part 'src/formats/jpeg/jpeg_component.dart';
@@ -81,8 +78,6 @@ part 'src/formats/decoder.dart';
 part 'src/formats/decode_info.dart';
 part 'src/formats/encoder.dart';
 part 'src/formats/formats.dart';
-part 'src/formats/gif_decoder.dart';
-part 'src/formats/gif_encoder.dart';
 part 'src/formats/jpeg_decoder.dart';
 part 'src/formats/jpeg_encoder.dart';
 part 'src/formats/png_decoder.dart';

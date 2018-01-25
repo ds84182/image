@@ -1,4 +1,4 @@
-part of image;
+part of image.formats.gif;
 
 /**
  * A decoder for the GIF image format.  This supports both single frame and

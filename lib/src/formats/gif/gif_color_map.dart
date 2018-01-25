@@ -1,4 +1,4 @@
-part of image;
+part of image.formats.gif;
 
 class GifColorMap {
   int bitsPerPixel;
