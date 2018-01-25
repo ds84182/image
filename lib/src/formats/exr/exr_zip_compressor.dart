@@ -1,8 +1,6 @@
 part of image.formats.exr;
 
 class ExrZipCompressor extends ExrCompressor {
-  ZLibDecoder zlib = new ZLibDecoder();
-
   ExrZipCompressor(ExrPart header, this._maxScanLineSize, this._numScanLines) :
     super._(header) {
   }
@@ -16,7 +14,7 @@ class ExrZipCompressor extends ExrCompressor {
 
   Uint8List uncompress(InputBuffer input, int x, int y,
                        [int width, int height]) {
-    Uint8List data = zlib.decodeBytes(input.toUint8List());
+    Uint8List data = zLibDecode(input.toUint8List());
 
     if (width == null) {
       width = _header.width;

@@ -216,7 +216,7 @@ class PngDecoder extends Decoder {
       return null;
     }
 
-    List<int> imageData = [];
+    Uint8Buffer imageData = new Uint8Buffer();
 
     int width = info.width;
     int height = info.height;
@@ -265,7 +265,7 @@ class PngDecoder extends Decoder {
 
     Image image = new Image(width, height, format);
 
-    List<int> uncompressed = new ZLibDecoder().decodeBytes(imageData);
+    List<int> uncompressed = zLibDecode(imageData.buffer.asUint8List());
 
     // input is the decompressed data.
     InputBuffer input = new InputBuffer(uncompressed, bigEndian: true);

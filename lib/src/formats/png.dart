@@ -9,10 +9,12 @@ import 'decode_info.dart';
 import 'decoder.dart';
 import 'encoder.dart';
 
-import 'package:archive/archive.dart' show ZLibDecoder, ZLibEncoder, getCrc32;
+import 'package:archive/archive.dart' show getCrc32;
+import 'package:typed_data/typed_buffers.dart';
 
 import 'package:image/src/animation.dart';
 import 'package:image/src/color.dart';
+import 'package:image/src/compression.dart';
 import 'package:image/src/image.dart';
 import 'package:image/src/image_exception.dart';
 import 'package:image/src/util.dart';

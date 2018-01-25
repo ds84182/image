@@ -8,9 +8,8 @@ import 'package:image/src/hdr.dart' show HdrImage, HdrSlice, hdrToImage;
 import 'decode_info.dart';
 import 'decoder.dart';
 
-import 'package:archive/archive.dart' show ZLibDecoder;
-
 import 'package:image/src/animation.dart';
+import 'package:image/src/compression.dart';
 import 'package:image/src/image.dart';
 import 'package:image/src/image_exception.dart';
 import 'package:image/src/util.dart';

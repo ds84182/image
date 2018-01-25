@@ -39,8 +39,7 @@ class PngEncoder extends Encoder {
 
     _filter(image, filteredImage);
 
-    List<int> compressed = new ZLibEncoder().encode(filteredImage,
-                                                        level: level);
+    List<int> compressed = zLibEncode(filteredImage, level: level);
 
     _writeChunk(output, 'IDAT', compressed);
 

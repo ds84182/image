@@ -281,12 +281,12 @@ class TiffImage {
 
       } else if (compression == COMPRESSION_DEFLATE) {
         List<int> data = p.toList(0, byteCount);
-        List<int> outData = new Inflate(data).getBytes();
+        List<int> outData = inflate(data);
         bdata = new InputBuffer(outData);
 
       } else if (compression == COMPRESSION_ZIP) {
         List<int> data = p.toList(0, byteCount);
-        List<int> outData = new ZLibDecoder().decodeBytes(data);
+        List<int> outData = zLibDecode(data);
         bdata = new InputBuffer(outData);
       } else if (compression == COMPRESSION_OLD_JPEG) {
         if (image == null) {
@@ -568,11 +568,11 @@ class TiffImage {
       }
     } else if (compression == COMPRESSION_ZIP) {
       List<int> data = p.toList(0, byteCount);
-      List<int> outData = new ZLibDecoder().decodeBytes(data);
+      List<int> outData = zLibDecode(data);
       bdata = new InputBuffer(outData);
     } else if (compression == COMPRESSION_DEFLATE) {
       List<int> data = p.toList(0, byteCount);
-      List<int> outData = new Inflate(data).getBytes();
+      List<int> outData = inflate(data);
       bdata = new InputBuffer(outData);
     } else if (compression == COMPRESSION_NONE) {
       bdata = p;

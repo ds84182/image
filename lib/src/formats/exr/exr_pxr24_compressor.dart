@@ -14,7 +14,7 @@ class ExrPxr24Compressor extends ExrCompressor {
 
   Uint8List uncompress(InputBuffer inPtr, int x, int y,
                        [int width, int height]) {
-    List<int> data = _zlib.decodeBytes(inPtr.toUint8List());
+    List<int> data = zLibDecode(inPtr.toUint8List());
     if (data == null) {
       throw new ImageException('Error decoding pxr24 compressed data');
     }
@@ -114,7 +114,6 @@ class ExrPxr24Compressor extends ExrCompressor {
     return _output.getBytes();
   }
 
-  ZLibDecoder _zlib = new ZLibDecoder();
   int _maxScanLineSize;
   int _numScanLines;
   OutputBuffer _output;
