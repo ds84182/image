@@ -1,6 +1,6 @@
 library image.fonts;
 
-import 'package:image/image.dart' show BitmapFont;
+import 'bitmap_font.dart';
 
 part 'fonts/arial_14.dart';
 part 'fonts/arial_24.dart';

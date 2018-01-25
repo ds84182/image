@@ -3,28 +3,10 @@ library image.filter;
 import 'dart:math' as Math;
 import 'dart:typed_data';
 
-import 'package:image/src/draw.dart';
-
-import 'package:image/image.dart'
-    show
-        Image,
-        getRed,
-        getGreen,
-        getBlue,
-        getAlpha,
-        clamp255,
-        grand,
-        getColor,
-        minMax,
-        crand,
-        prand,
-        RED,
-        GREEN,
-        BLUE,
-        ALPHA,
-        LUMINANCE,
-        getLuminanceRGB,
-        NeuralQuantizer;
+import 'color.dart';
+import 'draw.dart';
+import 'image.dart';
+import 'util.dart';
 
 part 'filter/adjust_color.dart';
 part 'filter/brightness.dart';

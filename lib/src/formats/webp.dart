@@ -8,18 +8,11 @@ import 'decode_info.dart';
 import 'decoder.dart';
 import 'encoder.dart';
 
-import 'package:image/image.dart'
-    show
-        InputBuffer,
-        Image,
-        Animation,
-        OutputBuffer,
-        getColor,
-        ImageException,
-        getRed,
-        getGreen,
-        getBlue,
-        getAlpha;
+import 'package:image/src/animation.dart';
+import 'package:image/src/color.dart';
+import 'package:image/src/image.dart';
+import 'package:image/src/image_exception.dart';
+import 'package:image/src/util.dart';
 
 part 'webp/vp8.dart';
 part 'webp/vp8_bit_reader.dart';

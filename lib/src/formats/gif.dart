@@ -8,8 +8,10 @@ import 'decode_info.dart';
 import 'decoder.dart';
 import 'encoder.dart';
 
-import 'package:image/image.dart'
-    show InputBuffer, Image, Animation, OutputBuffer, NeuralQuantizer, getColor;
+import 'package:image/src/animation.dart';
+import 'package:image/src/color.dart';
+import 'package:image/src/image.dart';
+import 'package:image/src/util.dart';
 
 part 'gif/gif_color_map.dart';
 part 'gif/gif_image_desc.dart';

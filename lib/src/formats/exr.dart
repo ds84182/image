@@ -9,8 +9,11 @@ import 'decode_info.dart';
 import 'decoder.dart';
 
 import 'package:archive/archive.dart' show ZLibDecoder;
-import 'package:image/image.dart'
-    show InputBuffer, ImageException, OutputBuffer, Image, Animation;
+
+import 'package:image/src/animation.dart';
+import 'package:image/src/image.dart';
+import 'package:image/src/image_exception.dart';
+import 'package:image/src/util.dart';
 
 part 'exr/exr_attribute.dart';
 part 'exr/exr_b44_compressor.dart';

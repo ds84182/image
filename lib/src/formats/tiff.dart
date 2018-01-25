@@ -9,8 +9,12 @@ import 'decoder.dart';
 import 'jpeg.dart' show JpegDecoder;
 
 import 'package:archive/archive.dart' show ZLibDecoder, Inflate;
-import 'package:image/image.dart'
-    show InputBuffer, Image, Animation, getColor, ImageException;
+
+import 'package:image/src/animation.dart';
+import 'package:image/src/color.dart';
+import 'package:image/src/image.dart';
+import 'package:image/src/image_exception.dart';
+import 'package:image/src/util.dart';
 
 part 'tiff/tiff_bit_reader.dart';
 part 'tiff/tiff_entry.dart';

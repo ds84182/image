@@ -2,17 +2,10 @@ library image.formats.pvrtc;
 
 import 'dart:typed_data';
 
-import 'package:image/image.dart'
-    show
-        InputBuffer,
-        Image,
-        OutputBuffer,
-        getColor,
-        ImageException,
-        getRed,
-        getGreen,
-        getBlue,
-        getAlpha;
+import 'package:image/src/color.dart';
+import 'package:image/src/image.dart';
+import 'package:image/src/image_exception.dart';
+import 'package:image/src/util.dart';
 
 part 'pvrtc/pvrtc_bit_utility.dart';
 part 'pvrtc/pvrtc_color.dart';

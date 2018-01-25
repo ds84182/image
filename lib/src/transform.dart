@@ -4,9 +4,10 @@ import 'dart:math' as Math;
 import 'dart:typed_data';
 
 import 'draw.dart' show drawPixel;
-
-import 'package:image/image.dart'
-    show Image, ImageException, LINEAR, AVERAGE, getColor, getAlpha;
+import 'color.dart';
+import 'image.dart';
+import 'image_exception.dart';
+import 'util.dart';
 
 part 'transform/copy_into.dart';
 part 'transform/copy_crop.dart';

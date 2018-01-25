@@ -3,7 +3,9 @@ library image.hdr;
 import 'dart:math' as Math;
 import 'dart:typed_data';
 
-import 'package:image/image.dart' show Image, float32ToUint32, ImageException;
+import 'image.dart';
+import 'image_exception.dart';
+import 'util.dart';
 
 part 'hdr/half.dart';
 part 'hdr/hdr_bloom.dart';

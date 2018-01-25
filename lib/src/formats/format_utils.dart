@@ -5,7 +5,8 @@ import 'dart:typed_data';
 import 'decoder.dart';
 import '../formats.dart';
 
-import 'package:image/image.dart' show Image, Animation;
+import 'package:image/src/animation.dart';
+import 'package:image/src/image.dart';
 
 /**
  * Find a [Decoder] that is able to decode the given image [data].

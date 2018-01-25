@@ -3,8 +3,9 @@ library image.util;
 import 'dart:math' as Math;
 import 'dart:typed_data';
 
-import 'package:image/image.dart'
-    show Image, ImageException, getRed, getGreen, getBlue, getAlpha, getColor;
+import 'color.dart';
+import 'image.dart';
+import 'image_exception.dart';
 
 part 'util/bit_operators.dart';
 part 'util/clip_line.dart';

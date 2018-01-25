@@ -10,19 +10,12 @@ import 'decoder.dart';
 import 'encoder.dart';
 
 import 'package:archive/archive.dart' show ZLibDecoder, ZLibEncoder, getCrc32;
-import 'package:image/image.dart'
-    show
-        InputBuffer,
-        Image,
-        Animation,
-        OutputBuffer,
-        getColor,
-        ImageException,
-        Color,
-        getRed,
-        getGreen,
-        getBlue,
-        getAlpha;
+
+import 'package:image/src/animation.dart';
+import 'package:image/src/color.dart';
+import 'package:image/src/image.dart';
+import 'package:image/src/image_exception.dart';
+import 'package:image/src/util.dart';
 
 part 'png/png_frame.dart';
 part 'png/png_info.dart';

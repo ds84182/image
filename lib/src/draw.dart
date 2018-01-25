@@ -2,18 +2,10 @@ library image.draw;
 
 import 'dart:math' as Math;
 
-import 'package:image/image.dart'
-    show
-        Image,
-        BitmapFont,
-        BitmapFontCharacter,
-        clipLine,
-        alphaBlendColors,
-        getAlpha,
-        getRed,
-        getGreen,
-        getBlue,
-        getColor;
+import 'bitmap_font.dart';
+import 'color.dart';
+import 'image.dart';
+import 'util.dart';
 
 part 'draw/draw_char.dart';
 part 'draw/draw_circle.dart';
