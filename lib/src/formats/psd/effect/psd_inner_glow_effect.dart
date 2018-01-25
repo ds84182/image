@@ -1,4 +1,4 @@
-part of image;
+part of image.formats.psd;
 
 
 class PsdInnerGlowEffect extends PsdEffect {

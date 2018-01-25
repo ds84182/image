@@ -1,4 +1,4 @@
-part of image;
+part of image.formats.psd;
 
 class PsdLayerSectionDivider extends PsdLayerData {
   static const String TAG = 'lsct';

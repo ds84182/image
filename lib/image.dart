@@ -20,7 +20,8 @@ import 'src/formats.dart'
         JpegDecoder,
         JpegEncoder,
         PngDecoder,
-        PngEncoder;
+        PngEncoder,
+        PsdDecoder;
 
 export 'src/draw.dart';
 export 'src/effects.dart';
@@ -29,22 +30,6 @@ export 'src/fonts.dart';
 
 export 'src/formats.dart';
 
-part 'src/formats/psd/effect/psd_bevel_effect.dart';
-part 'src/formats/psd/effect/psd_drop_shadow_effect.dart';
-part 'src/formats/psd/effect/psd_effect.dart';
-part 'src/formats/psd/effect/psd_inner_glow_effect.dart';
-part 'src/formats/psd/effect/psd_inner_shadow_effect.dart';
-part 'src/formats/psd/effect/psd_outer_glow_effect.dart';
-part 'src/formats/psd/effect/psd_solid_fill_effect.dart';
-part 'src/formats/psd/layer_data/psd_layer_additional_data.dart';
-part 'src/formats/psd/layer_data/psd_layer_section_divider.dart';
-part 'src/formats/psd/psd_blending_ranges.dart';
-part 'src/formats/psd/psd_channel.dart';
-part 'src/formats/psd/psd_image_resource.dart';
-part 'src/formats/psd/psd_image.dart';
-part 'src/formats/psd/psd_layer.dart';
-part 'src/formats/psd/psd_layer_data.dart';
-part 'src/formats/psd/psd_mask.dart';
 part 'src/formats/pvrtc/pvrtc_bit_utility.dart';
 part 'src/formats/pvrtc/pvrtc_color.dart';
 part 'src/formats/pvrtc/pvrtc_color_bounding_box.dart';
@@ -75,7 +60,6 @@ part 'src/formats/decoder.dart';
 part 'src/formats/decode_info.dart';
 part 'src/formats/encoder.dart';
 part 'src/formats/formats.dart';
-part 'src/formats/psd_decoder.dart';
 part 'src/formats/tga_decoder.dart';
 part 'src/formats/tga_encoder.dart';
 part 'src/formats/tiff_decoder.dart';

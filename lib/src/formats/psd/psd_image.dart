@@ -1,4 +1,4 @@
-part of image;
+part of image.formats.psd;
 
 class PsdImage extends DecodeInfo {
   static const int SIGNATURE = 0x38425053; // '8BPS'

@@ -1,4 +1,4 @@
-part of image;
+part of image.formats.psd;
 
 class PsdLayerAdditionalData extends PsdLayerData {
   InputBuffer data;
