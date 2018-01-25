@@ -1,4 +1,4 @@
-part of image;
+library image.image_exception;
 
 /**
  * An exception thrown when there was a problem in the image library.

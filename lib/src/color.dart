@@ -1,4 +1,8 @@
-part of image;
+library image.color;
+
+import 'dart:math' as Math;
+
+import 'image_exception.dart';
 
 /**
  * Image pixel colors are instantiated as an int object rather than an instance

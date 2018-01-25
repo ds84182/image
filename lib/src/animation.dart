@@ -1,4 +1,7 @@
-part of image;
+library image.animation;
+
+import 'dart:collection';
+import 'image.dart';
 
 /**
  * Stores multiple images, most oftenly as the frames of an animation.

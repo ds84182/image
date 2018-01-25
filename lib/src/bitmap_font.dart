@@ -1,4 +1,11 @@
-part of image;
+library image.bitmap_font;
+
+import 'formats/png.dart';
+import 'image.dart';
+import 'image_exception.dart';
+
+import 'package:archive/archive.dart' show Archive, ArchiveFile, ZipDecoder;
+import 'package:xml/xml.dart' as XML;
 
 /**
  * Decode a [BitmapFont] from the contents of a zip file that stores the
