@@ -1,4 +1,4 @@
-part of image;
+part of image.formats.tga;
 
 class TgaInfo extends DecodeInfo {
   /// The number of frames that can be decoded.

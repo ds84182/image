@@ -21,7 +21,9 @@ import 'src/formats.dart'
         JpegEncoder,
         PngDecoder,
         PngEncoder,
-        PsdDecoder;
+        PsdDecoder,
+        TgaEncoder,
+        TgaDecoder;
 
 export 'src/draw.dart';
 export 'src/effects.dart';
@@ -30,7 +32,6 @@ export 'src/fonts.dart';
 
 export 'src/formats.dart';
 
-part 'src/formats/tga/tga_info.dart';
 part 'src/formats/tiff/tiff_bit_reader.dart';
 part 'src/formats/tiff/tiff_entry.dart';
 part 'src/formats/tiff/tiff_fax_decoder.dart';
@@ -54,8 +55,6 @@ part 'src/formats/decoder.dart';
 part 'src/formats/decode_info.dart';
 part 'src/formats/encoder.dart';
 part 'src/formats/formats.dart';
-part 'src/formats/tga_decoder.dart';
-part 'src/formats/tga_encoder.dart';
 part 'src/formats/tiff_decoder.dart';
 part 'src/formats/webp_decoder.dart';
 part 'src/formats/webp_encoder.dart';
