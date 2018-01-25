@@ -1,4 +1,4 @@
-part of image;
+part of image.formats.tiff;
 
 class LzwDecoder {
   void decode(InputBuffer p, List<int> out) {

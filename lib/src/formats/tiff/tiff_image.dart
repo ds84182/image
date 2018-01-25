@@ -1,4 +1,4 @@
-part of image;
+part of image.formats.tiff;
 
 class TiffImage {
   Map<int, TiffEntry> tags = {};
@@ -608,7 +608,7 @@ class TiffImage {
     int dstCount = 0;
 
     while (dstCount < arraySize) {
-      int b = _uint8ToInt8(data[srcCount++]);
+      int b = data[srcCount++].toSigned(8);
       if (b >= 0 && b <= 127) {
         // literal run packet
         for (int i = 0; i < (b + 1); ++i) {

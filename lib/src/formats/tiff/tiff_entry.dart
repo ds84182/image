@@ -1,4 +1,4 @@
-part of image;
+part of image.formats.tiff;
 
 class TiffEntry {
   int tag;
