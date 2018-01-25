@@ -1,4 +1,4 @@
-part of image;
+part of image.formats.jpeg;
 
 class JpegData  {
   InputBuffer input;
@@ -669,6 +669,8 @@ class JpegData  {
   }
 
   static int _clamp8(int i) => i < 0 ? 0 : i > 255 ? 255 : i;
+  static int _shiftR(int v, int a) => (v >> a).toSigned(32);
+  static int _shiftL(int v, int a) => (v << a).toSigned(32);
 
   static Uint8List dctClip;
 

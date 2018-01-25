@@ -1,4 +1,4 @@
-part of image;
+part of image.formats.jpeg;
 
 class Jpeg {
   static const List<int> dctZigZag = const [

@@ -11,9 +11,9 @@ import 'dart:typed_data';
 import 'package:archive/archive.dart';
 import 'package:xml/xml.dart' as XML;
 
-import 'src/draw.dart'
-    show drawPixel, drawString;
-import 'src/formats.dart' show ExrDecoder, GifDecoder, GifEncoder;
+import 'src/draw.dart' show drawPixel, drawString;
+import 'src/formats.dart'
+    show ExrDecoder, GifDecoder, GifEncoder, JpegDecoder, JpegEncoder;
 
 export 'src/draw.dart';
 export 'src/effects.dart';
@@ -22,14 +22,6 @@ export 'src/fonts.dart';
 
 export 'src/formats.dart';
 
-part 'src/formats/jpeg/jpeg.dart';
-part 'src/formats/jpeg/jpeg_adobe.dart';
-part 'src/formats/jpeg/jpeg_component.dart';
-part 'src/formats/jpeg/jpeg_data.dart';
-part 'src/formats/jpeg/jpeg_frame.dart';
-part 'src/formats/jpeg/jpeg_info.dart';
-part 'src/formats/jpeg/jpeg_jfif.dart';
-part 'src/formats/jpeg/jpeg_scan.dart';
 part 'src/formats/png/png_frame.dart';
 part 'src/formats/png/png_info.dart';
 part 'src/formats/psd/effect/psd_bevel_effect.dart';
@@ -78,8 +70,6 @@ part 'src/formats/decoder.dart';
 part 'src/formats/decode_info.dart';
 part 'src/formats/encoder.dart';
 part 'src/formats/formats.dart';
-part 'src/formats/jpeg_decoder.dart';
-part 'src/formats/jpeg_encoder.dart';
 part 'src/formats/png_decoder.dart';
 part 'src/formats/png_encoder.dart';
 part 'src/formats/psd_decoder.dart';
