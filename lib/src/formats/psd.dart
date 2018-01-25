@@ -3,16 +3,11 @@ library image.formats.psd;
 import 'dart:math' as Math;
 import 'dart:typed_data';
 
+import 'decode_info.dart';
+import 'decoder.dart';
+
 import 'package:image/image.dart'
-    show
-        InputBuffer,
-        DecodeInfo,
-        Decoder,
-        Image,
-        Animation,
-        ImageException,
-        labToRGB,
-        cmykToRGB;
+    show InputBuffer, Image, Animation, ImageException, labToRGB, cmykToRGB;
 
 part 'psd/effect/psd_bevel_effect.dart';
 part 'psd/effect/psd_drop_shadow_effect.dart';

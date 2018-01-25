@@ -3,19 +3,14 @@ library image.formats.exr;
 import 'dart:typed_data';
 import 'dart:math' as Math;
 
+import 'package:image/src/hdr.dart' show HdrImage, HdrSlice, hdrToImage;
+
+import 'decode_info.dart';
+import 'decoder.dart';
+
 import 'package:archive/archive.dart' show ZLibDecoder;
 import 'package:image/image.dart'
-    show
-        InputBuffer,
-        HdrImage,
-        ImageException,
-        OutputBuffer,
-        DecodeInfo,
-        HdrSlice,
-        Decoder,
-        Image,
-        Animation,
-        hdrToImage;
+    show InputBuffer, ImageException, OutputBuffer, Image, Animation;
 
 part 'exr/exr_attribute.dart';
 part 'exr/exr_b44_compressor.dart';

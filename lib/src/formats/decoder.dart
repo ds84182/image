@@ -1,8 +1,9 @@
 library image.formats.decoder;
 
-import 'package:image/image.dart' show Image, HdrImage, Animation;
+import 'package:image/image.dart' show Image, Animation;
 
 import 'decode_info.dart';
+import 'package:image/src/hdr.dart' show HdrImage;
 
 /**
  * Base class for image format decoders.

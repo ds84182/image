@@ -2,14 +2,15 @@ library image.formats.jpeg;
 
 import 'dart:typed_data';
 
+import 'decode_info.dart';
+import 'decoder.dart';
+import 'encoder.dart';
+
 import 'package:image/image.dart'
     show
         InputBuffer,
-        DecodeInfo,
-        Decoder,
         Image,
         Animation,
-        Encoder,
         OutputBuffer,
         getColor,
         ImageException;

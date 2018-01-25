@@ -1,20 +1,15 @@
 library image.formats.gif;
 
-import 'dart:math' as Math;
 import 'dart:typed_data';
 
+import 'package:image/src/transform.dart' show copyInto;
+
+import 'decode_info.dart';
+import 'decoder.dart';
+import 'encoder.dart';
+
 import 'package:image/image.dart'
-    show
-        InputBuffer,
-        DecodeInfo,
-        Decoder,
-        Image,
-        Animation,
-        Encoder,
-        OutputBuffer,
-        NeuralQuantizer,
-        getColor,
-        copyInto;
+    show InputBuffer, Image, Animation, OutputBuffer, NeuralQuantizer, getColor;
 
 part 'gif/gif_color_map.dart';
 part 'gif/gif_image_desc.dart';

@@ -2,17 +2,19 @@ library image.formats.webp;
 
 import 'dart:typed_data';
 
+import 'package:image/src/transform.dart' show copyInto;
+
+import 'decode_info.dart';
+import 'decoder.dart';
+import 'encoder.dart';
+
 import 'package:image/image.dart'
     show
         InputBuffer,
-        DecodeInfo,
-        Decoder,
         Image,
         Animation,
-        Encoder,
         OutputBuffer,
         getColor,
-        copyInto,
         ImageException,
         getRed,
         getGreen,
