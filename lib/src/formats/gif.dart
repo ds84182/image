@@ -20,5 +20,5 @@ part 'gif/gif_color_map.dart';
 part 'gif/gif_image_desc.dart';
 part 'gif/gif_info.dart';
 
-part 'gif_decoder.dart';
-part 'gif_encoder.dart';
+part 'gif/gif_decoder.dart';
+part 'gif/gif_encoder.dart';
