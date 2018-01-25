@@ -33,7 +33,7 @@ class Color {
   /**
    * Create a color value from HSL values in the range [0, 1].
    */
-  static int fromHsl(num hue, num saturation, num lightness) {
+  static int fromHsl(double hue, double saturation, double lightness) {
     var rgb = hslToRGB(hue, saturation, lightness);
     return getColor(rgb[0], rgb[1], rgb[2]);
   }
@@ -41,7 +41,7 @@ class Color {
   /**
    * Create a color value from HSV values in the range [0, 1].
    */
-  static int fromHsv(num hue, num saturation, num value) {
+  static int fromHsv(double hue, double saturation, double value) {
     var rgb = hsvToRGB(hue, saturation, value);
     return getColor(rgb[0], rgb[1], rgb[2]);
   }
@@ -49,7 +49,7 @@ class Color {
   /**
    * Create a color value from XYZ values.
    */
-  static int fromXyz(num x, num y, num z) {
+  static int fromXyz(double x, double y, double z) {
     var rgb = xyzToRGB(x, y, z);
     return getColor(rgb[0], rgb[1], rgb[2]);
   }
@@ -57,7 +57,7 @@ class Color {
   /**
    * Create a color value from CIE-L*ab values.
    */
-  static int fromLab(num L, num a, num b) {
+  static int fromLab(double L, double a, double b) {
     var rgb = labToRGB(L, a, b);
     return getColor(rgb[0], rgb[1], rgb[2]);
   }
@@ -93,9 +93,9 @@ int getColor(int r, int g, int b, [int a = 255]) =>
  * Get the [channel] from the [color].
  */
 int getChannel(int color, int channel) =>
-    channel == 0 ? getRed(color) :
-    channel == 1 ? getGreen(color) :
-    channel == 2 ? getBlue(color) :
+    channel == RED ? getRed(color) :
+    channel == GREEN ? getGreen(color) :
+    channel == BLUE ? getBlue(color) :
     getAlpha(color);
 
 /**
@@ -103,9 +103,9 @@ int getChannel(int color, int channel) =>
  * replaced with the given [value].
  */
 int setChannel(int color, int channel, int value) =>
-    channel == 0 ? setRed(color, value) :
-    channel == 1 ? setGreen(color, value) :
-    channel == 2 ? setBlue(color, value) :
+    channel == RED ? setRed(color, value) :
+    channel == GREEN ? setGreen(color, value) :
+    channel == BLUE ? setBlue(color, value) :
     setAlpha(color, value);
 
 /**
@@ -204,13 +204,13 @@ int getLuminanceRGB(int r, int g, int b) =>
  * [0, 1] (where 1 is 360-degrees); s and l are in the range [0, 1].
  * Returns a list [r, g, b] with values in the range [0, 255].
  */
-List<int> hslToRGB(num hue, num saturation, num lightness) {
+List<int> hslToRGB(double hue, double saturation, double lightness) {
   if (saturation == 0) {
     int gray = (lightness * 255.0).toInt();
     return [gray, gray, gray];
   }
 
-  hue2rgb(num p, num q, num t) {
+  double hue2rgb(double p, double q, double t) {
     if (t < 0.0) {
       t += 1.0;
     }
@@ -246,7 +246,7 @@ List<int> hslToRGB(num hue, num saturation, num lightness) {
  * [0, 1] (where 1 is 360-degrees); s and l are in the range [0, 1].
  * Returns a list [r, g, b] with values in the range [0, 255].
  */
-List<int> hsvToRGB(num hue, num saturation, num brightness) {
+List<int> hsvToRGB(double hue, double saturation, double brightness) {
   if (saturation == 0) {
     var gray = (brightness * 255.0).round();
     return [gray, gray, gray];
@@ -292,12 +292,12 @@ List<int> hsvToRGB(num hue, num saturation, num brightness) {
  * Convert an RGB color to HSL, where r, g and b are in the range [0, 255].
  * Returns a list [h, s, l] with values in the range [0, 1].
  */
-List<double> rgbToHSL(num r, num g, num b) {
-  r /= 255.0;
-  g /= 255.0;
-  b /= 255.0;
-  var max = Math.max(r, Math.max(g, b));
-  var min = Math.min(r, Math.min(g, b));
+List<double> rgbToHSL(int r, int g, int b) {
+  double dr = r / 255.0;
+  double dg = g / 255.0;
+  double db = b / 255.0;
+  var max = Math.max(dr, Math.max(dg, db));
+  var min = Math.min(dr, Math.min(dg, db));
   var h;
   var s;
   var l = (max + min) / 2.0;
@@ -310,12 +310,12 @@ List<double> rgbToHSL(num r, num g, num b) {
 
   s = l > 0.5 ? d / (2.0 - max - min) : d / (max + min);
 
-  if (max == r) {
-    h = (g - b) / d + (g < b ? 6.0 : 0.0);
-  } else if (max == g) {
-    h = (b - r) / d + 2.0;
+  if (max == dr) {
+    h = (dg - db) / d + (dg < db ? 6.0 : 0.0);
+  } else if (max == dg) {
+    h = (db - dr) / d + 2.0;
   } else {
-    h = (r - g) / d + 4.0;
+    h = (dr - dg) / d + 4.0;
   }
 
   h /= 6.0;
@@ -326,7 +326,7 @@ List<double> rgbToHSL(num r, num g, num b) {
 /**
  * Convert a CIE-L*ab color to XYZ.
  */
-List<int> labToXYZ(num l, num a, num b) {
+List<int> labToXYZ(double l, double a, double b) {
   var y = (l + 16.0) / 116.0;
   var x = y + (a / 500.0);
   var z = y - (b / 200.0);
@@ -352,7 +352,7 @@ List<int> labToXYZ(num l, num a, num b) {
 /**
  * Convert an XYZ color to RGB.
  */
-List<int> xyzToRGB(num x, num y, num z) {
+List<int> xyzToRGB(double x, double y, double z) {
   var b, g, r;
   x /= 100;
   y /= 100;
@@ -385,20 +385,16 @@ List<int> xyzToRGB(num x, num y, num z) {
  * Convert a CMYK color to RGB, where c, m, y, k values are in the range
  * [0, 255]. Returns a list [r, g, b] with values in the range [0, 255].
  */
-List<int> cmykToRGB(num c, num m, num y, num k) {
-  c /= 255.0;
-  m /= 255.0;
-  y /= 255.0;
-  k /= 255.0;
-  return [(255.0 * (1.0 - c) * (1.0 - k)).round(),
-          (255.0 * (1.0 - m) * (1.0 - k)).round(),
-          (255.0 * (1.0 - y) * (1.0 - k)).round()];
+List<int> cmykToRGB(int c, int m, int y, int k) {
+  return [(255.0 * (1.0 - c / 255.0) * (1.0 - k / 255.0)).round(),
+          (255.0 * (1.0 - m / 255.0) * (1.0 - k / 255.0)).round(),
+          (255.0 * (1.0 - y / 255.0) * (1.0 - k / 255.0)).round()];
 }
 
 /**
  * Convert a CIE-L*ab color to RGB.
  */
-List<int> labToRGB(num l, num a, num b) {
+List<int> labToRGB(double l, double a, double b) {
   const double ref_x = 95.047;
   const double ref_y = 100.000;
   const double ref_z = 108.883;

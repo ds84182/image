@@ -52,7 +52,7 @@ void defineColorTests() {
     });
 
     test('CMYK', () {
-      var rgb = cmykToRGB((0.75 * 255), (0.5 * 255), (0.5 * 255), (0.5 * 255));
+      var rgb = cmykToRGB((0.75 * 255).toInt(), (0.5 * 255).toInt(), (0.5 * 255).toInt(), (0.5 * 255).toInt());
       expect(rgb[0], equals(32));
       expect(rgb[1], equals(64));
       expect(rgb[2], equals(64));

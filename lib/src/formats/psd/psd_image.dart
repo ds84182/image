@@ -560,7 +560,7 @@ class PsdImage extends DecodeInfo {
             int b = _ch(channel2.data, si, ns) - 128;
             int alpha = numChannels >= 4 ?
                         _ch(channel_1.data, si, ns) : 255;
-            List<int> rgb = labToRGB(L, a, b);
+            List<int> rgb = labToRGB(L.toDouble(), a.toDouble(), b.toDouble());
             pixels[di++] = rgb[0];
             pixels[di++] = rgb[1];
             pixels[di++] = rgb[2];
