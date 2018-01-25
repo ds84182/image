@@ -1,4 +1,4 @@
-part of image;
+part of image.formats.png;
 
 class PngInfo extends DecodeInfo {
   int bits;

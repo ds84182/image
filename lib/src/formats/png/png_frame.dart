@@ -1,4 +1,4 @@
-part of image;
+part of image.formats.png;
 
 /**
  * Decodes a frame from a PNG animation.

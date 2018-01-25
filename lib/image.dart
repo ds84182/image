@@ -13,7 +13,14 @@ import 'package:xml/xml.dart' as XML;
 
 import 'src/draw.dart' show drawPixel, drawString;
 import 'src/formats.dart'
-    show ExrDecoder, GifDecoder, GifEncoder, JpegDecoder, JpegEncoder;
+    show
+        ExrDecoder,
+        GifDecoder,
+        GifEncoder,
+        JpegDecoder,
+        JpegEncoder,
+        PngDecoder,
+        PngEncoder;
 
 export 'src/draw.dart';
 export 'src/effects.dart';
@@ -22,8 +29,6 @@ export 'src/fonts.dart';
 
 export 'src/formats.dart';
 
-part 'src/formats/png/png_frame.dart';
-part 'src/formats/png/png_info.dart';
 part 'src/formats/psd/effect/psd_bevel_effect.dart';
 part 'src/formats/psd/effect/psd_drop_shadow_effect.dart';
 part 'src/formats/psd/effect/psd_effect.dart';
@@ -70,8 +75,6 @@ part 'src/formats/decoder.dart';
 part 'src/formats/decode_info.dart';
 part 'src/formats/encoder.dart';
 part 'src/formats/formats.dart';
-part 'src/formats/png_decoder.dart';
-part 'src/formats/png_encoder.dart';
 part 'src/formats/psd_decoder.dart';
 part 'src/formats/tga_decoder.dart';
 part 'src/formats/tga_encoder.dart';
