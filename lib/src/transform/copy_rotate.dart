@@ -1,4 +1,4 @@
-part of image;
+part of image.transform;
 
 /**
  * Returns a copy of the [src] image, rotated by [angle] degrees.

@@ -1,4 +1,4 @@
-part of image;
+part of image.transform;
 
 /**
  * Copies a rectangular portion of one image to another image. [dst] is the

@@ -1,4 +1,4 @@
-part of image;
+part of image.transform;
 
 /**
  * Returns a resized copy of the [src] image.

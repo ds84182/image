@@ -27,12 +27,7 @@ export 'src/formats/format_utils.dart';
 
 export 'src/hdr.dart';
 
-part 'src/transform/copy_into.dart';
-part 'src/transform/copy_crop.dart';
-part 'src/transform/copy_resize.dart';
-part 'src/transform/copy_rotate.dart';
-part 'src/transform/flip.dart';
-part 'src/transform/trim.dart';
+export 'src/transform.dart';
 
 part 'src/util/bit_operators.dart';
 part 'src/util/clip_line.dart';

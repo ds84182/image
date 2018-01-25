@@ -1,4 +1,4 @@
-part of image;
+part of image.transform;
 
 /// Flip the image horizontally.
 const int FLIP_HORIZONTAL = 1;

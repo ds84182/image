@@ -1,4 +1,4 @@
-part of image;
+part of image.transform;
 
 /**
  * Returns a croped copy of [src].

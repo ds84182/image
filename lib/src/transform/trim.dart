@@ -1,4 +1,4 @@
-part of image;
+part of image.transform;
 
 /// Trim an image to the top-left and bottom-right most non-transparent pixels,
 /// used by [findTrim] and [trim].
