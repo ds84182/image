@@ -1,4 +1,4 @@
-part of image;
+part of image.util;
 
 /**
  * A buffer that can be read as a stream of bytes.

@@ -1,4 +1,4 @@
-part of image;
+part of image.util;
 
 /**
  * Find the minimum and maximum color value in the image.

@@ -1,4 +1,4 @@
-part of image;
+part of image.util;
 
 /**
  * Clip a line to a rectangle using the Cohen–Sutherland clipping algorithm.

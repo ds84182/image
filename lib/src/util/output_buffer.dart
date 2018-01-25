@@ -1,4 +1,4 @@
-part of image;
+part of image.util;
 
 class OutputBuffer {
   int length;

@@ -1,4 +1,4 @@
-part of image;
+part of image.util;
 
 /**
  * Return a random variable between [-1,1].

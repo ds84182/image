@@ -1,4 +1,4 @@
-part of image;
+part of image.util;
 
 /* NeuQuant Neural-Net Quantization Algorithm
  * ------------------------------------------

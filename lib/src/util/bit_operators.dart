@@ -1,4 +1,4 @@
-part of image;
+part of image.util;
 
 int _shiftR(int v, int n) {
   // dart2js can't handle binary operations on negative numbers, so
