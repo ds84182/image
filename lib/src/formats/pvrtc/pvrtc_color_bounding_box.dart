@@ -1,4 +1,4 @@
-part of image;
+part of image.formats.pvrtc;
 
 class PvrtcColorBoundingBox {
   var min;

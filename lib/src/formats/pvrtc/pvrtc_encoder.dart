@@ -1,4 +1,4 @@
-part of image;
+part of image.formats.pvrtc;
 
 /**
  * Ported from Jeffrey Lim's PVRTC encoder/decoder,

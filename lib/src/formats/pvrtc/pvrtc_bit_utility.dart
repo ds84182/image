@@ -1,4 +1,4 @@
-part of image;
+part of image.formats.pvrtc;
 
 class BitUtility {
   static bool isPowerOf2(int x) => (x & (x - 1)) == 0;

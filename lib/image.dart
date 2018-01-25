@@ -30,12 +30,6 @@ export 'src/fonts.dart';
 
 export 'src/formats.dart';
 
-part 'src/formats/pvrtc/pvrtc_bit_utility.dart';
-part 'src/formats/pvrtc/pvrtc_color.dart';
-part 'src/formats/pvrtc/pvrtc_color_bounding_box.dart';
-part 'src/formats/pvrtc/pvrtc_decoder.dart';
-part 'src/formats/pvrtc/pvrtc_encoder.dart';
-part 'src/formats/pvrtc/pvrtc_packet.dart';
 part 'src/formats/tga/tga_info.dart';
 part 'src/formats/tiff/tiff_bit_reader.dart';
 part 'src/formats/tiff/tiff_entry.dart';
