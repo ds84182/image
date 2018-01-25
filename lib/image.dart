@@ -13,24 +13,15 @@ import 'package:xml/xml.dart' as XML;
 
 import 'src/draw.dart'
     show drawPixel, drawString;
+import 'src/formats.dart' show ExrDecoder;
 
 export 'src/draw.dart';
 export 'src/effects.dart';
 export 'src/filter.dart';
 export 'src/fonts.dart';
 
-part 'src/formats/exr/exr_attribute.dart';
-part 'src/formats/exr/exr_b44_compressor.dart';
-part 'src/formats/exr/exr_channel.dart';
-part 'src/formats/exr/exr_compressor.dart';
-part 'src/formats/exr/exr_huffman.dart';
-part 'src/formats/exr/exr_image.dart';
-part 'src/formats/exr/exr_part.dart';
-part 'src/formats/exr/exr_piz_compressor.dart';
-part 'src/formats/exr/exr_pxr24_compressor.dart';
-part 'src/formats/exr/exr_rle_compressor.dart';
-part 'src/formats/exr/exr_wavelet.dart';
-part 'src/formats/exr/exr_zip_compressor.dart';
+export 'src/formats.dart';
+
 part 'src/formats/gif/gif_color_map.dart';
 part 'src/formats/gif/gif_image_desc.dart';
 part 'src/formats/gif/gif_info.dart';
@@ -89,7 +80,6 @@ part 'src/formats/webp/webp_info.dart';
 part 'src/formats/decoder.dart';
 part 'src/formats/decode_info.dart';
 part 'src/formats/encoder.dart';
-part 'src/formats/exr_decoder.dart';
 part 'src/formats/formats.dart';
 part 'src/formats/gif_decoder.dart';
 part 'src/formats/gif_encoder.dart';

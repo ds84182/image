@@ -1,4 +1,4 @@
-part of image;
+part of image.formats.exr;
 
 class ExrHuffman {
   static void uncompress(InputBuffer compressed, int nCompressed,

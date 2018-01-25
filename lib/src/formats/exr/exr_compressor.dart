@@ -1,4 +1,4 @@
-part of image;
+part of image.formats.exr;
 
 abstract class ExrCompressor {
   static const int NO_COMPRESSION = 0;

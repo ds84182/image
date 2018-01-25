@@ -1,4 +1,4 @@
-part of image;
+part of image.formats.exr;
 
 class ExrChannel {
   static const int TYPE_UINT = HdrImage.UINT;

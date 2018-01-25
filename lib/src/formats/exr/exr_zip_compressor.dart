@@ -1,4 +1,4 @@
-part of image;
+part of image.formats.exr;
 
 class ExrZipCompressor extends ExrCompressor {
   ZLibDecoder zlib = new ZLibDecoder();

@@ -1,4 +1,4 @@
-part of image;
+part of image.formats.exr;
 
 class ExrRleCompressor extends ExrCompressor {
   ExrRleCompressor(ExrPart header, this._maxScanLineSize) :

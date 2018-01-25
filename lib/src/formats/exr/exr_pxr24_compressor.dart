@@ -1,4 +1,4 @@
-part of image;
+part of image.formats.exr;
 
 class ExrPxr24Compressor extends ExrCompressor {
   ExrPxr24Compressor(ExrPart header, this._maxScanLineSize, this._numScanLines) :

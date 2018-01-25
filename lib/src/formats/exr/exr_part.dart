@@ -1,4 +1,4 @@
-part of image;
+part of image.formats.exr;
 
 class ExrPart {
   /// The framebuffer for this exr part.

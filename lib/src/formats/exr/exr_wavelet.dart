@@ -1,4 +1,4 @@
-part of image;
+part of image.formats.exr;
 
 class ExrWavelet {
   static void decode(Uint16List input, int si, int nx, int ox, int ny, int oy,
@@ -128,8 +128,8 @@ class ExrWavelet {
   static const int MOD_MASK = (1 <<  NBITS) - 1;
 
   static void wdec14(int l, int h, List<int> a_b) {
-    int ls = _uint16ToInt16(l);
-    int hs = _uint16ToInt16(h);
+    int ls = l.toSigned(16);
+    int hs = h.toSigned(16);
 
     int hi = hs;
     int ai = ls + (hi & 1) + (hi >> 1);
