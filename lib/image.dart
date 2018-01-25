@@ -33,11 +33,10 @@ export 'src/filter.dart';
 export 'src/fonts.dart';
 
 export 'src/formats.dart';
-
-part 'src/formats/decoder.dart';
-part 'src/formats/decode_info.dart';
-part 'src/formats/encoder.dart';
-part 'src/formats/formats.dart';
+export 'src/formats/decoder.dart';
+export 'src/formats/decode_info.dart';
+export 'src/formats/encoder.dart';
+export 'src/formats/format_utils.dart';
 
 part 'src/hdr/half.dart';
 part 'src/hdr/hdr_bloom.dart';

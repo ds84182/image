@@ -1,4 +1,4 @@
-part of image;
+library image.formats.decode_info;
 
 /**
  * Provides information about the image being decoded.

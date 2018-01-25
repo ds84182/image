@@ -1,4 +1,6 @@
-part of image;
+library image.format.encoder;
+
+import 'package:image/image.dart' show Image, Animation;
 
 /**
  * Base class for image format encoders.
